@@ -8,6 +8,8 @@ import SignUp from './components/auth/SignUp'
 import CreatePost from './components/posts/CreatePost'
 import Profile from './components/profile/Profile'
 import Highscores from './components/highscore/Highscore'
+import QuestCalc from './components/QuestCalc/QuestCalc'
+import AchievementCalc from './components/AchievementCalc/AchievementCalc'
 // import { Jumbotron } from './components/Jumbotron/GlobalJumbotron'
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
           <Route path='/profile' component={Profile} />
           <Route path='/createpost' component={CreatePost} />
           <Route path='/highscores' component={Highscores} />
+          <Route path='/questcalc' component={QuestCalc} />
+          <Route path='/achievementcalc' component={AchievementCalc} />
         </Switch>
       </div>
     </BrowserRouter>

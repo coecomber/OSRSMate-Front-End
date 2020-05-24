@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
+import { getHighscoresByUsername } from '../../store/actions/highscoreActions'
 
 class Highscore extends Component {
+
+    componentDidMount(){
+        this.props.getHighscoresByUsername('grey')
+    }
+
     render() {
         const { highscore } = this.props.state;
 
@@ -188,8 +193,11 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-}, dispatch)
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getHighscoresByUsername: (highscores) => dispatch(getHighscoresByUsername('grey'))
+    }
+}
 
 export default connect(
     mapStateToProps,

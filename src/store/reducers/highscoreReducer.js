@@ -34,8 +34,12 @@ const initState = {
 const highscoreReducer = (state = initState, action) => {
     switch (action.type) {
         case 'GET_HIGHSCORE':
-            console.log('Got all highscores for following user: ', action.username)
-            return state;
+            state.highscore = action.response
+            console.log('state before returning is')
+            console.log(state)
+            return {
+                ...state
+            }
         case 'GET_HIGHSCORE_ERROR':
             console.log('Trying to get all highscores failed for the following user: ', action.username)
             return state;

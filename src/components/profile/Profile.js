@@ -10,8 +10,8 @@ class Profile extends Component {
         console.log(auth);
 
         return(
-            <div className="container">
-                <h5 className="grey-text text-darken-3">Profile</h5>
+            <div className="container grey darken-2 grey-text text-darken-4">
+                <h5>Profile</h5>
                 <p>Mail: {auth.email}</p>
                 <br /><br />
 
