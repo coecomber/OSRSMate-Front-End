@@ -156,7 +156,7 @@ class Highscore extends Component {
 
                         <br /><br />
 
-                        <img src="https://i.gyazo.com/11687966fd51c519443b16910c0eafeb.png" />
+                        <img src="https://i.gyazo.com/11687966fd51c519443b16910c0eafeb.png" alt="Highscores Graph" />
 
                     </div>
                     <div className="col s12 m4 offset-m1 grey darken-2 grey-text text-darken-4">
