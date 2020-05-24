@@ -7,6 +7,7 @@ import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import CreatePost from './components/posts/CreatePost'
 import Profile from './components/profile/Profile'
+import Highscores from './components/highscore/Highscore'
 // import { Jumbotron } from './components/Jumbotron/GlobalJumbotron'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/signup' component={SignUp} />
           <Route path='/profile' component={Profile} />
           <Route path='/createpost' component={CreatePost} />
+          <Route path='/highscores' component={Highscores} />
         </Switch>
       </div>
     </BrowserRouter>
